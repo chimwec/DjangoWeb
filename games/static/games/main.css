@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    top: 79px;
+    left: auto;
+    right: auto;
+    width: 146px;
+    height: 150px;
+    opacity: 1;
+}
+
+.background {
+    top: 0px;
+    left: -7px;
+    width: 1935px;
+    height: 1290px;
+}
+.image2 {
+    position: absolute;
+    top: 276px;
+    left: 763px;
+    width: 394px;
+    height: 175px;
+    opacity: 1;
+    background: transparent 0% 0% no-repeat padding-box;
+}
+
+.logo {
+    position: absolute;
+    top: 79x;
+    left: 106px;
+    width: 146px;
+    height: 150px;
+    background-color: #f0f0f0; /* Example background color */
+    border: none; /* Example border */
+    border-radius: 9px; /* Example border radius */
+    padding: 10px; /* Example padding */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+
+/**
+ * Styles for the navigation bar.
+ *
+ * Sets the list to display as a flex container, centers it horizontally, 
+ * and applies some visual styles.
+ */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #001F4B;
+    overflow: hidden;
+    display: flex;
+    /* Added */
+    justify-content: center;
+    /* Added */
+}
+  
+.nav li {
+    /* Removed float: left; */
+    margin: 0 10px; /* Added for spacing between items */
+}
+/**
+ * Styles for links inside the navigation menu.
+ * Removes text alignment and adds padding and styling.
+ */
+.nav li a {
+    display: block;
+    /* Removed text-align: right; */
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+  
+/**
+ * Changes link background color on hover.
+ */
+.nav li a:hover {
+    background-color: red;
+}
+
+/* Style the header */
+.header {
+    background-color: #001F4B;
+    left: 0px;
+    width: 100%;
+    height: 187px;
+    top: 0px;
+    opacity: 1;
+}
+
+/**
+ * Styles for the login button element.
+ * Sets position, dimensions, styling, and text properties.
+ */
+.login-button {
+    position: absolute;
+    top: 35px;
+    left: 1692px;
+    width: 160px;
+    height: 56px;
+    border-radius: 9px;
+    background: #eeeeee 0px 0px no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+/**
+ * Styles for the register button element.
+ * Sets position, dimensions, styling, and text properties.
+ */
+.register-button {
+    position: absolute;
+    top: 103px;
+    left: 1692px;
+    width: 160px;
+    height: 56px;
+    border-radius: 9px;
+    background: #eeeeee 0px 0px no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 480px) {
+    .header {
+        float: none;
+        width: 100%;
+    }
+}
