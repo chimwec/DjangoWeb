@@ -18,7 +18,12 @@
 
 {% block content %}
 <img src="{% static 'games/images/nyasa text-06-06-05.png' %}" class="image2">
+{% if user.username %}
+<h1 class="greet">Welcome {{user.username}}</h1>
+{% endif %}
 
-
+{% if user.username %}
+<a class="logout-button" href="{% url 'logout' %}">Log Out</a>
+{% endif %}
 
 {% endblock %}

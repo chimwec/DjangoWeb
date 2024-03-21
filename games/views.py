@@ -66,7 +66,7 @@ class CustomLoginView(LoginView):
 
 def logout_view(request):
     logout(request)
-    return redirect('home.html')
+    return redirect('home')
 
 
 class UserProfile(CreateView):
