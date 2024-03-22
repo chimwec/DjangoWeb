@@ -217,13 +217,16 @@ img {
 
 .logout-button {
     position: absolute;
-    top: 504px;
-    left: 300px;
-    width: 605px;
-    height: 36px;
-    text-align: left;
-    font: normal normal normal 30px/36px Museo Sans 700;
-    letter-spacing: 0px;
-    color: #eeeeee;
+    top: 100px;
+    left: 1500px;
+    width: 160px;
+    height: 56px;
+    border-radius: 9px;
+    background: #eeeeee 0px 0px no-repeat padding-box;
     opacity: 1;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+
 }

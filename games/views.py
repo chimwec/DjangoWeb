@@ -15,7 +15,7 @@ from django.views.generic.base import TemplateView
 from django.contrib.auth.models import User
 
 # Create your views here.
-@login_required
+#@login_required
 def home(request):
     context = {"name": request.user}
     return render(request, 'games/home.html', context)
@@ -69,7 +69,7 @@ def logout_request(request):
     return redirect("home")
 
 
-class UserProfile(CreateView):
+class UserProfile(LoginRequiredMixin,CreateView):
     model = UserProfile
     form_class = UserProfileForm
     success_url = reverse_lazy("home")

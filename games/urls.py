@@ -5,7 +5,6 @@ from .views import UserProfile, CustomLoginView
 urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('account/', include("django.contrib.auth.urls")),
     path('accounts/login/', CustomLoginView.as_view(), name='login'),
     path('register/', views.register.as_view(), name='register'),
     path('logout/', views.logout_request, name='logout'),
