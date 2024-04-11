@@ -47,7 +47,7 @@ def register(request):
          form = SignUpForm()
     return render(request, 'games/register.html', {'form': form})  
 
-class register(CreateView):
+class Register(CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy("login")
     template_name = "games/register.html"
