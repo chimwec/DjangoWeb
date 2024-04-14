@@ -74,4 +74,3 @@ class UserProfile(LoginRequiredMixin,CreateView):
     form_class = UserProfileForm
     success_url = reverse_lazy("home")
     template_name = "games/profile.html"
-    
