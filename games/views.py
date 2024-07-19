@@ -47,6 +47,7 @@ def register(request):
          form = SignUpForm()
     return render(request, 'games/register.html', {'form': form})  
 
+
 class Register(CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy("login")
@@ -76,6 +77,6 @@ class UserProfile(LoginRequiredMixin,CreateView):
     template_name = "games/profile.html"
 
 
-
+@login_required
 def game(request):
     return render(request, 'games/game.html')
